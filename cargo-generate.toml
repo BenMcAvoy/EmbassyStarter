@@ -1,3 +1,9 @@
-[prompts]
-author = { description: "What is your name?", default: "Unknown" }
-license = { description: "What license do you want to use?", default: "MIT" }
+[placeholders.license]
+type = "string"
+prompt = "What license would you like?"
+default = "MIT"
+
+[placeholders.author]
+type = "string"
+prompt = "Who is the author of this project?"
+default = "Unknown <unknown@unknown.com>"
