@@ -7,3 +7,20 @@ default = "MIT"
 type = "string"
 prompt = "Who is the author of this project?"
 default = "Unknown <unknown@unknown.com>"
+
+[placeholders.family]
+type = "string"
+prompt = "What family does your board belong to?"
+choices = ["stm32", "nrf", "rp", "esp"]
+default = "stm32"
+
+[placeholders.board]
+type = "string"
+prompt = "What family does your board belong to?"
+choices = ["stm32c0", "stm32f0", "stm32f1", "stm32f2", "stm32f3", "stm32f334", "stm32f4", "stm32f7", "stm32l0", "stm32l1", "stm32l4", "stm32l5", "stm32u5", "stm32wb", "stm32wba", "stm32wl", "nrf52840", "nrf5340", "rp"]
+default = "stm32f4"
+
+[placeholders.chip]
+type = "string"
+prompt = "What model are you using?"
+default = "29zi"

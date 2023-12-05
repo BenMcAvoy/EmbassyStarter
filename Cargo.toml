@@ -7,8 +7,7 @@ edition = "2021"
 version = "0.1.0"
 
 [dependencies]
-# TODO: Change stm32f429zi to your chip name, if necessary.
-embassy-stm32 = { git = "https://github.com/embassy-rs/embassy.git", package = "embassy-stm32", features = [ "defmt", "stm32f429zi", "unstable-pac", "memory-x", "time-driver-any", "exti", "embedded-sdmmc", "chrono"] }
+embassy-{{family}} = { git = "https://github.com/embassy-rs/embassy.git", package = "embassy-stm32", features = [ "defmt", "{{board}}{{chip}}", "unstable-pac", "memory-x", "time-driver-any", "exti", "embedded-sdmmc", "chrono"] }
 embassy-sync = { git = "https://github.com/embassy-rs/embassy.git", package = "embassy-sync", features = ["defmt"] }
 embassy-executor = { git = "https://github.com/embassy-rs/embassy.git", package = "embassy-executor", features = ["nightly", "arch-cortex-m", "executor-thread", "executor-interrupt", "defmt", "integrated-timers"] }
 embassy-time = { git = "https://github.com/embassy-rs/embassy.git", package = "embassy-time", features = ["defmt", "defmt-timestamp-uptime", "tick-hz-32_768"] }
